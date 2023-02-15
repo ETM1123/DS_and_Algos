@@ -1,1 +1,0 @@
-"""This file will include all of the test cases for locate_card module."""

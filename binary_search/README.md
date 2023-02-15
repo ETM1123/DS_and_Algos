@@ -69,12 +69,13 @@ $$
 
 Let the kth iteration of the array have length 1 (smallest possible element), then
 
-$$\begin{align*}
+$$
+\begin{align*}
     1=& \frac{N}{2^{k}}  \\
     2^{k} =& N \\
      k =& \log{N} \\
-    
-\end{align*}$$
+\end{align*}
+$$
 
 **Generic Binary Search Algorithm**
 
