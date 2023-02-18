@@ -1,16 +1,4 @@
-"""1D Peak Finding"""
-from typing import Callable
-
-def binary_search(lo, hi, condition :Callable[[int], str]) -> int:
-  while lo <= hi:
-    mid = (lo + hi) // 2
-    result = condition(mid)
-    if result == "found":
-      return mid
-    elif result == "left":
-      hi = mid - 1
-    else:
-      lo = mid + 1
+from binary_search.binary_search import BS
 
 def find_peak(nums : list[int]) -> int:
   def condition(mid : int) -> str:
@@ -43,4 +31,4 @@ def find_peak(nums : list[int]) -> int:
     else:
       return hi
   else:
-    return binary_search(lo, hi, condition)
+    return BS(lo, hi, condition)

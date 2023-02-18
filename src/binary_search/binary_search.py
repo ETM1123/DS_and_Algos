@@ -1,7 +1,7 @@
 """General algorithm for Binary Search"""
 from typing import Callable
 
-def BS(lo : int, hi : int, condition : Callable[[int], str]) -> int:
+def BS(lo : int, hi : int, condition : Callable[[int], str], not_found_output : int = None) -> int:
   """
   1. Come up with a condition to determine whether the answer lies before, after or at a given position.
   2. Retrieve the midpoint and the middle element of the list.
@@ -18,6 +18,7 @@ def BS(lo : int, hi : int, condition : Callable[[int], str]) -> int:
       hi = mid - 1
     else:
       lo = mid + 1
-  return - 1
+      
+  return not_found_output
 
 test_num = 100000000
