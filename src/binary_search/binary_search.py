@@ -19,3 +19,5 @@ def BS(lo : int, hi : int, condition : Callable[[int], str]) -> int:
     else:
       lo = mid + 1
   return - 1
+
+test_num = 100000000
